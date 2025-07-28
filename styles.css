@@ -134,6 +134,22 @@ main {
 /* === STYLES FOR THE NEW EVENT BANNER GREETING CARD === */
 /* ================================================= */
 
+/* This centers the greeting card section in the viewport */
+#greeting-card-section {
+    display: none; /* Keep this hidden initially */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a nice backdrop */
+    backdrop-filter: blur(5px);
+}
+
+
 .banner-card {
     position: relative;
     width: 90vw;
@@ -147,13 +163,13 @@ main {
 
 .banner-user-pic {
     position: absolute;
-    /* These percentages place the picture over the green circle */
-    top: 66%;
-    left: 34%;
+    /* UPDATED: Precise percentages to center on the green circle */
+    top: 68%;
+    left: 33.5%;
     transform: translate(-50%, -50%); /* This centers the image precisely */
     
-    /* The picture's width is relative to the banner's width */
-    width: 15%; 
+    /* UPDATED: Slightly larger size for better quality */
+    width: 16%; 
     border-radius: 50%;
     border: 4px solid white;
     background-color: #eee; /* Fallback color while the image loads */
@@ -162,9 +178,9 @@ main {
 
 .banner-user-name {
     position: absolute;
-    /* These percentages place the name below the picture */
-    top: 82%;
-    left: 34%;
+    /* UPDATED: Precise percentages to center below the circle */
+    top: 85%;
+    left: 33.5%;
     transform: translateX(-50%);
     
     width: 40%;
