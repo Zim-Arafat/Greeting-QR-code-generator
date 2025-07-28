@@ -2,7 +2,7 @@
 // STEP 1: Initialize Supabase
 // =================================================
 // Replace with your Project URL and anon key from Supabase
-const SUPABASE_URL = 'https://supabase.com/dashboard/project/dkdcslwtlvsghuxyorfm'; 
+const SUPABASE_URL = 'https://dkdcslwtlvsghuxyorfm.supabase.co'; 
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrZGNzbHd0bHZzZ2h1eHlvcmZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3MTkyMzksImV4cCI6MjA2OTI5NTIzOX0.atcJ3p9IwGPURcCnGj4aDJQXpsMj7kEMoK2jqmbjKjM';
 
 // Create a single Supabase client for interacting with your database
