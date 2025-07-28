@@ -2,7 +2,7 @@
 // STEP 1: Initialize Supabase
 // =================================================
 
-// Replace with your correct Project API URL and anon key
+// Your correct Project API URL and anon key
 const SUPABASE_URL = 'https://dkdcslwtlvsghuxyorfm.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRrZGNzbHd0bHZzZ2h1eHlvcmZtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM3MTkyMzksImV4cCI6MjA2OTI5NTIzOX0.atcJ3p9IwGPURcCnGj4aDJQXpsMj7kEMoK2jqmbjKjM';
 
@@ -65,11 +65,12 @@ function showGreetingCard(user) {
 
   // Hide the login section and show the greeting card section
   loginSection.style.display = 'none';
-  // Use flex display to enable the new centering styles
+  // Use 'flex' to trigger the full-screen overlay styles
   greetingSection.style.display = 'flex';
 }
 
 function showLoginPage() {
   greetingSection.style.display = 'none';
-  loginSection.style.display = 'block';
+  // Note: The login section is inside the 'main' tag which is already a block element.
+  // We just need to make sure the greeting card overlay is hidden.
 }
