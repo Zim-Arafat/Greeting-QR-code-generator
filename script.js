@@ -56,8 +56,8 @@ supabase.auth.onAuthStateChange((event, session) => {
 function showGreetingCard(user) {
   // Get user's name and picture from the metadata provided by Google
   userPic.src = user.user_metadata.avatar_url;
-  userName.textContent = user.user_metadata.full_name;
-
+  userName.textContent = 'Welcome, ' + user.user_metadata.full_name;
+  
   // Hide the login section and show the greeting card section
   loginSection.style.display = 'none';
   greetingSection.style.display = 'block';
