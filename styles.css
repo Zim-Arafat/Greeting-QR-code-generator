@@ -126,25 +126,26 @@ main {
 
 .banner-user-pic {
     position: absolute;
-    top: calc(73% + 52px);
+    top: 73%;
     left: 50%;
-    transform: translatex(-50%);
+    transform: translatex(-50%, -50%);
     text-align: center;
     color: white;
-    font-size: clamp (16px, 2.5vw, 28px);
     font-weight: bold;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     white-space: nowrap;
-    max-width: 80%;
+    max-width: 100%;
+    width: 125px;
+    border-radius: 50%;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .banner-user-name {
     position: absolute;
-    top: calc(50% + 80px);
+    top: 73%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     color: white;
     font-size: clamp(16px, 2.5vw, 28px);
